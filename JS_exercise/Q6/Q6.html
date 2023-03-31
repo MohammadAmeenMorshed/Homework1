@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Replace Substring Example</title>
+  </head>
+  <body>
+    <script>
+      function replaceSubstring(string, substring, replacement) {
+        return string.split(substring).join(replacement);
+      }
+
+      // Example usage
+      let originalString = "This is a test string";
+      let newString = replaceSubstring(originalString, "test", "replacement");
+
+      console.log(originalString); // Output: "This is a test string"
+      console.log(newString); // Output: "This is a replacement string"
+    </script>
+  </body>
+</html>

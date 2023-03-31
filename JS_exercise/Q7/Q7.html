@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Second Smallest Value in an Array</title>
+</head>
+
+<body>
+    <h1>Second Smallest Value in an Array</h1>
+
+    <script>
+        function secondSmallest(numbers) {
+            numbers.sort(function (a, b) {
+                return a - b;
+            });
+
+            return numbers[1];
+        }
+
+        var myArray = [4, 7, 2, 1, 5];
+        var secondSmallestValue = secondSmallest(myArray);
+
+        document.write("The second smallest value in the array is: " + secondSmallestValue);
+    </script>
+</body>
+
+</html>

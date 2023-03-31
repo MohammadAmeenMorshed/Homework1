@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Duration Formatter</title>
+</head>
+
+<body>
+    <h1>Time Duration Formatter</h1>
+    <p>Enter time duration in seconds:</p>
+    <input type="number" id="duration">
+    <button onclick="formatDuration()">Format</button>
+    <p id="result"></p>
+
+    <script>
+        function formatDuration() {
+            // Get input value
+            const duration = document.getElementById('duration').value;
+
+            // Call the function to format duration
+            const formattedDuration = formatTimeDuration(duration);
+
+            // Display the formatted duration in the result paragraph
+            document.getElementById('result').innerHTML = formattedDuration;
+        }
+
+        function formatTimeDuration(duration) {
+            // Function code here
+        }
+    </script>
+</body>
+
+</html>

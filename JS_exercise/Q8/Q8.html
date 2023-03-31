@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find Difference Between Two Arrays</title>
+</head>
+
+<body>
+    <h1>Find Difference Between Two Arrays</h1>
+    <script>
+        function findDifference(arr1, arr2) {
+            // Create an empty array to store the difference
+            var diff = [];
+    
+
+            // Loop through the first array
+            for (var i = 0; i < arr1.length; i++) {
+                // Check if the current element is not in the second array
+                if (arr2.indexOf(arr1[i]) === -1) {
+                    // Add the current element to the difference array
+                    diff.push(arr1[i]);
+                }
+            }
+
+            // Return the difference array
+            return diff;
+        }
+
+        // Example usage
+        var array1 = [1, 2, 3, 4, 5];
+        var array2 = [3, 5, 7, 9];
+        var difference = findDifference(array1, array2);
+        console.log(difference); // [1, 2, 4]
+
+        // Display the result on the web page
+        document.write("<p>The difference between [" + array1 + "] and [" + array2 + "] is: [" + difference + "]</p>");
+    </script>
+</body>
+
+</html>
